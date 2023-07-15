@@ -167,3 +167,37 @@ footer {
     font-size: 15px;
   }
 }
+
+@media (max-width: 815px) {
+  .header {
+    width: 90%;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .hero {
+    width: 90%;
+    margin-bottom: 6rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    border-bottom: 1rem;
+  }
+}
+
+@media (max-width: 613px) {
+  .header {
+    width: 92%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .hero {
+    width: 92%;
+  }
+
+  .hero_info {
+    width: 60%;
+  }
+}
