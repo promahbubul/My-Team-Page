@@ -193,11 +193,23 @@ footer {
     margin-bottom: 5rem;
   }
 
+  .header_left h1 {
+    font-size: 2.2rem;
+  }
+
   .hero {
     width: 92%;
   }
 
   .hero_info {
     width: 60%;
+  }
+
+  .photo_group p {
+    font-size: 0.9rem;
+  }
+
+  .hero_info {
+    font-size: 0.7rem;
   }
 }
