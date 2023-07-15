@@ -1,0 +1,161 @@
+/* =============================
+                Import Fonts
+============================= */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
+
+/* =============================
+                Default Style
+============================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Serif", serif;
+}
+
+/* =============================
+                Header Section
+============================= */
+.header {
+  width: 70%;
+  margin: auto;
+  margin-top: 7rem;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header_left {
+  width: 50%;
+}
+.header_left h1 {
+  font-family: "PT Serif";
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #000;
+}
+
+.header_right {
+  width: 50%;
+}
+.header_right h3 {
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.header_right p {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* =============================
+                Hero Section Style
+============================= */
+.hero {
+  width: 70%;
+  /* border: 2px solid red; */
+  margin: auto;
+  grid-template-columns: calc(96% / 3) calc(96% / 3) calc(96% / 3);
+  display: grid;
+  box-sizing: border-box;
+  grid-gap: 2%;
+  grid-template-rows: calc(98% / 2) calc(98% / 2);
+}
+
+.hero_group {
+  position: relative;
+}
+
+.photo_group {
+  width: 80%;
+  border-radius: 5px;
+}
+.photo_group img {
+  width: 100%;
+}
+.photo_group p {
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 900;
+}
+.hero_info {
+  width: 50%;
+  position: absolute;
+  top: 70px;
+  transform: rotate(90deg);
+  right: -30px;
+  font-family: PT serif;
+  font-size: 14px;
+}
+.hero_info span {
+}
+
+.margin_top {
+  margin-top: 7rem;
+  height: 100%;
+}
+
+/* =========================
+          Media Query 
+========================= */
+
+@media (max-width: 412px) {
+  .header {
+    width: 94%;
+    flex-direction: column;
+    margin: 3rem auto;
+  }
+  .header_left {
+    width: 100%;
+  }
+
+  .header_left h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+  }
+
+  .header_right {
+    width: 100%;
+  }
+
+  .hero {
+    width: 94%;
+    grid-template-columns: calc(96% / 2) calc(96% / 2);
+    display: grid;
+    grid-gap: 4%;
+    grid-template-rows: calc(94% / 3) calc(94% / 3) calc(94% / 3);
+  }
+
+  .hero_info {
+    width: 71%;
+    top: 50px;
+    right: -50px;
+    font-size: 17px;
+  }
+
+  .photo_group p {
+    font-size: 1rem;
+  }
+
+  .margin_top {
+    margin-top: 0rem;
+  }
+
+  .downimage {
+    margin-top: 60px;
+  }
+  .hero_info span {
+    font-size: 15px;
+  }
+}
